@@ -1,0 +1,338 @@
+/* @import url("https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "poppins", sans-serif; */
+}
+
+body {
+  /* font-family: "poppins", sans-serif; */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400px;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3833;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+
+.start {
+padding: 10px 0px;
+}
+
+
+.start i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.navbar {
+  font-weight: bold;  
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* border-radius: 100%; */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 0px 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover,
+ul i:hover,
+.navbar .navbar-nav .nav-link.active,
+ul i.active {
+  color: coral;
+}
+
+/* search and bag icon styleling */
+ul i {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0px 7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* /* mobile nav  */
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  /* font-weight: 500; */
+  transition: 0.3s ease;
+  color: black;
+}
+
+#bar:hover,
+#bar.active {
+  color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  body > nav > div > button:hover,
+  body > nav > div > button:focus {
+    background-color: #fb774b;
+  }
+
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar {
+    color: #fff;
+  }
+
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+
+/* we can use this in zoox project 
+hint background as video
+below code will be contemplative
+ */
+
+#home {
+  background-image: url("img/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span {
+  color: coral;
+}
+
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(194, 155, 155, 0.5);
+}
+
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+
+#new .one .details button:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#new .one:nth-child(1) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;
+  text-align: start;
+}
+
+#new .one:nth-child(2) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#new .one:nth-child(3) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: end;
+}
+
+/* products */
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+.product .buy-btn {
+  background: #fb774b;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#banner{
+  background-image: url("img/banner/2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#banner h4{
+  color: #d8d8d8;
+}
+
+#banner h1{
+  color: #fff;
+}
+
+#banner button{
+ background-color: #fb774b;
+}
+
+footer
+{
+  background-color: #222222;
+  color: #fff;
+}
+
+
+footer h5{
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+footer li a{
+  font-size: 0.8rem;
+  color: #999;
+}
+
+footer li a:hover{
+  color: #d8d8d8;
+}
+
+footer p{
+    color: #999;
+    font: size 0.8rem;
+}
+
+footer .copyright a{
+   color: #000;
+   width: 38px;
+   height: 38px;
+   background-color: #fff;
+   display: inline-block;
+   text-align: center;
+   line-height: 38px;
+   border-radius: 50%;
+   transition:0.3s ease;
+   margin: 0px 5px;
+}
+
+footer .copyright a:hover{
+  color: #fff;
+  background-color:#fb774b;
+}
