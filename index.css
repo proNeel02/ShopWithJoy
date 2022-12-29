@@ -39,6 +39,7 @@ h5 {
 
 h6 {
   color: #d8d8d8;
+  color: grey;
 }
 
 button {
@@ -251,14 +252,14 @@ below code will be contemplative
 }
 
 .product .buy-btn {
-  background: #fb774b;
-  transform: translateY(20px);
+  background: #f77f00;
+  transform: translateY(50px);
   opacity: 0;
   transition: 0.3s all;
 }
 
 .product:hover .buy-btn {
-  transform: translateY(0px);
+  transform: translateY(10px);
   opacity: 1;
 }
 
