@@ -253,6 +253,7 @@ below code will be contemplative
   transform: translateY(50px);
   opacity: 0;
   transition: 0.3s all;
+  border-radius: 100px;
 }
 
 .product:hover .buy-btn {
