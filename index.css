@@ -153,16 +153,49 @@ below code will be contemplative
  */
 
 #home {
-  background-image: url("img/back.jpg");
+  margin-top: 32px;
+  background-image: url("img/Back/back7.webp");
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-size: cover;
   background-position: top 60px center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-repeat: no-repeat;
 }
+
+
+
+
+
+/* carousel css */
+
+/* .carousel a{
+  height: 900px;
+  width: 650px;
+} */
+
+
+
+
+/* .carousel {
+  height: 800px;
+  perspective: 950px;
+  transform: translateY(-100px);
+}
+
+.carousel carousel-item {
+  width: 7050px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 200px;
+}
+ */
+
 
 #home span {
   color: coral;
