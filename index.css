@@ -127,7 +127,7 @@ ul i {
 @media only screen and (max-width: 991px) {
   body > nav > div > button:hover,
   body > nav > div > button:focus {
-    background-color: #fb774b;
+    background-color: coral;
   }
 
   body > nav > div > button:hover #bar,
